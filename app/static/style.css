@@ -1,3 +1,25 @@
 h1{
-    color: chocolate;
+    margin-top: 40px;
+    color: rgb(158, 81, 240);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+p{
+    margin-left: 10px;
+    color: rgb(107, 55, 126);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a{
+    margin-left: 10px;
+    color: rgb(78, 28, 98);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body{
+    background-color: rgb(214, 213, 255);
 }
