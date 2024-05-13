@@ -5,7 +5,7 @@ from flask import render_template
 def index():
     return render_template("index.html.jinja")
 
-@app.route('/extract')
+@app.route('/extract', methods=['POST', 'GET'])
 def extract():
     return render_template("extract.html.jinja")
 
