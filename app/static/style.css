@@ -1,9 +1,16 @@
+html{
+    background-color: rgb(227, 203, 242);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 h1{
-    margin-top: 40px;
-    color: rgb(158, 81, 240);
+    margin-top: 30px;
+    color: rgb(91, 37, 148);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
+    text-shadow: 0.2px 0.2px;
 }
 
 p{
@@ -11,15 +18,98 @@ p{
     color: rgb(107, 55, 126);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 24px;
 }
+
 
 a{
     margin-left: 10px;
+    line-height: 1.8;
     color: rgb(78, 28, 98);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 26px;
+}
+a:hover{
+    transition: 0.5s;
+    background-image: radial-gradient(azure, rgba(0,0,0,0));
+    color: #ffa5d8;
 }
 
-body{
-    background-color: rgb(214, 213, 255);
+section{
+    color:#c682a5;
+    font-size: 26px;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    min-height: 90vh;
+    background-color: rgb(230, 213, 255);
+    margin-bottom: 5vh;
+    border: 2.5px solid rgb(209, 193, 233); 
+    text-shadow: 0.2px 0.2px;
 }
+
+li{
+    width: 340px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    border-style:solid;
+    border-width: 2.5px;
+    border-color: #e3beeb;
+    background-color: #f6ceff;    
+}
+
+#signature{
+    text-align: right;
+    font-size: 18px;
+}
+
+header{
+    background-color: rgb(222, 195, 247);
+    border: 2px solid rgb(218, 193, 233);
+    text-shadow: 0.2px 0.2px;
+}
+
+.product_opinion{
+    border-bottom: 2px solid rgb(218, 193, 233);
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.recommended{color: green;}
+
+.not_recommended{color: red;}
+
+.patterns {
+    height: 20vh;
+}
+
+svg text {
+    font-family: Lora;
+    letter-spacing: 10px;
+    stroke: #ffa5d8;
+    font-size: 70px;
+    font-weight: 700;
+    stroke-width: 3;
+    animation: textAnimate 5s infinite alternate;   
+}
+  
+@keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:rgb(107, 55, 126);
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+}
+  
+  
